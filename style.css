@@ -166,7 +166,53 @@ nav ul li a{
 .hero h1{
     font-size: 9rem;
 }
-
+/* Services */
+#services{
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 7rem 0;
+}
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 830px;
+    padding: 0 2.5rem;
+}
+.services h2{
+    font-size: 2rem ;
+    font-weight: 400;
+    color: rgb(157, 157, 157);
+}
+.services h1{
+    font-size: 5rem ;
+    margin: 2rem 0;
+}
+.services p{
+    font-size: 2rem ;
+    line-height: 3rem ;
+    font-weight: 300;
+}
+.services a{
+    margin-top: 3rem;
+}
+.btn{
+    font-size: 1.6rem;
+    font-weight: 400;
+    border-radius: .3rem;
+    color: #fff;
+    background-color: var(--red);
+    transition: all .3s ease;
+    padding: 1.6rem 3rem;
+}
+.btn:hover{
+    background-color: var(--red-hover);
+}
 @media screen and (max-width:1300px) {
     .nav {
         width: 95%;
@@ -198,6 +244,9 @@ nav ul li a{
 @media screen and (max-width:860px) {
     .hero {
         transform: translateX(-50px);
+    }
+    .services {
+        width: 600px;
     }
 }
 @media screen and (max-width:000) {
@@ -231,6 +280,12 @@ nav ul li a{
     #hero {
         background-position: -367px 0;
     }
+    .services {
+        width: 95%;
+    }
+    .services h1 {
+        font-size: 4rem;
+    }
 }
 @media screen and (max-width:550px) {
     nav ul{
@@ -240,6 +295,12 @@ nav ul li a{
 @media screen and (max-width:450px) {
     #hero {
         background-position: -446px 0;
+    }
+    .services {
+        padding: 0 1.5rem;
+    }
+    .services h1 {
+        font-size: 3rem;
     }
 }
 @media screen and (max-width:350px) {
