@@ -213,6 +213,61 @@ nav ul li a{
 .btn:hover{
     background-color: var(--red-hover);
 }
+/* Need */
+#need{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0;
+}
+.need-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 2rem;
+}
+.need-box-desc p{
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+}
+.need-box-img {
+    width: 100%;
+}
+.need-box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.need-box-desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 3.5rem 5rem;
+}
+.need-box:last-child {
+    flex-direction:column-reverse ;
+}
+.need-box:last-child .need-box-desc{
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding:    3.5rem 0;
+}
+.need-box:last-child .need-box-desc h1{
+    font-size: 3.5rem;
+}
+.need-box:last-child .need-box-desc h2{
+    font-size: 3.1rem;
+    margin-top: 2rem;
+    color: var(--red);
+}
+.need-box:last-child {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
 @media screen and (max-width:1300px) {
     .nav {
         width: 95%;
@@ -234,6 +289,9 @@ nav ul li a{
     .hero {
         transform: translateX(-165px);
     }
+    .need-box {
+        width: 390px;
+    }
 }
 @media screen and (max-width:000) {
     
@@ -247,6 +305,12 @@ nav ul li a{
     }
     .services {
         width: 600px;
+    }
+    #need{
+        flex-direction: column;
+    }
+    .need-box {
+        width: 490px;
     }
 }
 @media screen and (max-width:000) {
@@ -291,6 +355,15 @@ nav ul li a{
     nav ul{
         width: 80vw;
     }
+    .need-box {
+        width: 370px;
+    }
+    .need-box:last-child .need-box-desc h1 {
+        font-size: 3rem;
+    }
+    .need-box:last-child .need-box-desc h2 {
+        font-size: 2.6rem;
+    }
 }
 @media screen and (max-width:450px) {
     #hero {
@@ -301,6 +374,23 @@ nav ul li a{
     }
     .services h1 {
         font-size: 3rem;
+    }
+}
+@media screen and (max-width:400px) {
+    .need-box-desc {
+        padding: 3.5rem 2rem;
+    }
+    .need-box:last-child .need-box-desc {
+        padding: 3.5rem 1.5rem;
+    }
+    .need-box:last-child .need-box-desc h1 {
+        font-size: 2.5rem;
+    }
+    .need-box:last-child .need-box-desc h2 {
+        font-size: 2rem;
+    }
+    .need-box {
+        width: 90%;
     }
 }
 @media screen and (max-width:350px) {
