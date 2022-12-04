@@ -268,6 +268,56 @@ nav ul li a{
     align-items: flex-start;
     justify-content: flex-start;
 }
+/* Quality */
+#quality{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/9f710de59576552888227ee6/g.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.quality-img{
+    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/e08438069f545e2abce59599/billionphotos1079319min.png);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 500px;
+}
+.quality-desc{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+    width: 500px;
+    margin: 0 2.5rem;
+}
+.quality-desc h1{
+    font-size: 7rem;
+    color: #104e92;
+}
+.quality-desc hr{
+    width: 100%;
+    height: 1rem;
+    background-color: var(--red);
+    outline: none;
+    border: none;
+    margin: 2rem 0;
+}
+.quality-desc p{
+    font-size: 2.2rem ;
+    line-height: 3.3rem;
+    font-weight: 400;
+}
+.quality-desc a{
+    margin-top: 2rem;
+}
+/* Services */
+#services{
+    height: 50vh;
+}
 @media screen and (max-width:1300px) {
     .nav {
         width: 95%;
@@ -313,8 +363,21 @@ nav ul li a{
         width: 490px;
     }
 }
-@media screen and (max-width:000) {
-    
+@media screen and (max-width:820px) {
+    #quality{
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+    .quality-desc{
+        margin: 2.5rem 2rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .quality-img {
+        height: 577px;
+        width: 400px;
+    }
 }
 @media screen and (max-width:000) {
     
@@ -350,6 +413,15 @@ nav ul li a{
     .services h1 {
         font-size: 4rem;
     }
+    .quality-desc {
+        width: 80%;
+    }
+    .quality-desc h1 {
+        font-size: 4rem;
+    }
+    .quality-desc hr{
+        width: 70%;
+    }
 }
 @media screen and (max-width:550px) {
     nav ul{
@@ -375,6 +447,16 @@ nav ul li a{
     .services h1 {
         font-size: 3rem;
     }
+    .quality-img {
+        height: 577px;
+        width: 90%;
+    }
+    .quality-desc {
+        margin: 2.5rem 0rem;
+    }
+    #quality {
+        height: 115vh;
+    }
 }
 @media screen and (max-width:400px) {
     .need-box-desc {
@@ -391,6 +473,10 @@ nav ul li a{
     }
     .need-box {
         width: 90%;
+    }
+    .quality-desc p {
+        font-size: 1.9rem;
+        line-height: 2.7rem;
     }
 }
 @media screen and (max-width:350px) {
