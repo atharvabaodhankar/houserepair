@@ -491,7 +491,79 @@ nav ul li a {
     background-repeat: no-repeat;
     grid-area: grid-4;
 }
-
+/* Booknow  */
+#book{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 7rem 0;
+}
+.book{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 650px;
+}
+.book h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 4.5rem;
+}
+.book h1:nth-child(2){
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 4.5rem;
+    margin: 2.5rem 0;
+}
+.book-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.book-btn a:last-child{
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+}
+.book-btn a{
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+}
+/* Footer */
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 2.5rem;
+    background-color: rgb(54, 54, 54);
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer p{
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 2.5rem;
+}
+.footer p:last-child{
+    margin-top: 4rem;
+}
+.footer p a{
+    font-size: 1.7rem;
+    color: var(--red);
+    text-decoration: underline;
+}
 @media screen and (max-width:1300px) {
     .nav {
         width: 95%;
@@ -622,7 +694,11 @@ nav ul li a {
     }
 }
 
-@media screen and (max-width:000) {}
+@media screen and (max-width:750px) {
+    .book {
+        width: 460px;
+    }
+}
 
 @media screen and (max-width:000) {}
 
@@ -699,6 +775,15 @@ nav ul li a {
     .about-left h1 {
         font-size: 5rem;
         margin-top: 2rem;
+    }
+    .book-btn{
+        flex-direction: column;
+    }
+    .book-btn a{
+        margin: 1rem 1rem;
+    }
+    .book {
+        width: 90%;
     }
 }
 @media screen and (max-width:500px) {
